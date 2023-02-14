@@ -27,10 +27,13 @@
 <script setup>
 const blogsPerPage = 5
 
+const currentPage = useRoute().params.pagenation
+
 const { data } = await useAsyncData("blogQuery", () => 
     queryContent("/blog")
     .sort({ id: -1 })
     .limit(blogsPerPage)
+    .skip(blogsPerPage * (currentPage - 1))
     .find()
 )
 

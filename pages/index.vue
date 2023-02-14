@@ -42,3 +42,11 @@
     </section>
   </div>
 </template>
+<script setup>
+useHead({
+  title: "トップページ",
+  meta: [
+      { name: "description", content: "テストサイト" }
+  ],
+})
+</script>
