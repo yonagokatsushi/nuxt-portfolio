@@ -39,12 +39,12 @@
 }
 
 /* Pagination */
-.paginationWrapper {
+.pagenationWrapper {
     text-align: center;
     margin: 5rem auto;
 }
 
-.paginationWrapper > a {
+.pagenationWrapper > a {
     color: #108775;
     padding: 0 1rem;
 }
