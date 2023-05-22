@@ -13,5 +13,15 @@ export default defineNuxtConfig({
         "~/assets/styles/blog.css",
         "~/assets/styles/contact.css",
         "~/assets/styles/singleblog.css",
-    ]
-})
+    ],
+    buildModules: ["nuxt-microcms-module"],
+    microcms: {
+      options: {
+        serviceDomain: "dw8xjxligy",
+        apiKey: "ta6gezkRHgHxZ2DlXv6ytIssd3MIsxUpNy9s",
+      },
+      mode: process.env.NODE_ENV === "production" ? "server" : "all",
+    },
+  })
+
+  
